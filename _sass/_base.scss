@@ -113,8 +113,6 @@ a {
  * Wrapper
  */
 .wrapper {
-  //max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  //max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
   margin-right: auto;
   margin-left: auto;
   padding-right: $spacing-unit;
@@ -127,6 +125,12 @@ a {
     padding-right: $spacing-unit / 2;
     padding-left: $spacing-unit / 2;
   }
+}
+
+.wrapper-fixed-width {
+  @extend .wrapper;
+  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
+  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
 }
 
 
