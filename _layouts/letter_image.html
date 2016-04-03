@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+
+    <main id="page-wrap">
+      {% include header.html %}
+
+      <div class="page-content">
+        <div class="wrapper">
+          {{ content }}
+        </div>
+      </div>
+      <div class="footer-push"></div>
+    </main>
+
+    {% include footer.html %}
+
+  <script>
+    function resize() {
+      document.querySelector('.letter-image img').style.maxHeight = document.documentElement.clientHeight - 250 + "px";
+    };
+    window.onresize = resize;
+    resize();
+  </script>
+  </body>
+
+</html>
