@@ -79,6 +79,9 @@ body {
   text-align: center;
   margin-left: 0;
   list-style: none;
+  @include media-query($on-palm) {
+    padding-top: 100px;
+  }
 }
 
 .post-meta {
