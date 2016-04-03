@@ -2,6 +2,13 @@ body {
   background-color: black;
 }
 
+.footer-link, .social-media-link {
+  display: inline-block;
+  &:not(:first-child) {
+    margin-left: 5px;
+  }
+}
+
 .social-media-list {
   text-align: center;
 }
@@ -121,6 +128,7 @@ body {
 }
 
 .contact-list,
+.footer-links-list,
 .social-media-list {
     list-style: none;
     margin-left: 0;
