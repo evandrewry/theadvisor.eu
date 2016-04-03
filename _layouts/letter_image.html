@@ -27,7 +27,11 @@
       }
     };
     function resize() {
-      document.querySelector('.letter-image img').style.maxHeight = document.documentElement.clientHeight - 226 + "px";
+      var e = document.querySelector('.letter-image img');
+      e.style.maxHeight = document.documentElement.clientHeight - 226 + "px";
+      e.style.height = "auto";
+      e.style.width = "auto";
+      verticallyCenter(document.querySelector('.page-content'));
     };
     window.onresize = resize;
     resize();
