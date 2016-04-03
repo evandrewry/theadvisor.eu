@@ -18,7 +18,7 @@ description: > # this means to ignore newlines until "baseurl:"
   OFFERING THEIR PERSONAL EXPERIENCES AND ADVISEMENT IN PURSUITS OF OCCUPATION,
   LIFE, AND LOVE, THE ADVISOR AIMS TO BRIDGE THE GAP BETWEEN MYTH AND REALITY,
   ALLOWING FOR COUNSEL AND GUIDANCE FROM EACH INDIVIDUAL CREATIVE TO THE READER.
-baseurl: "/theadvisor.eu" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://theadvisor.eu" # the base hostname & protocol for your site
 twitter_username: theadvisor_eu
 
