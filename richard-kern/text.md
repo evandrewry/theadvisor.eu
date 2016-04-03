@@ -14,6 +14,6 @@ LOVE, ME
 
 
 <div class="letter-links">
-  <a class="page-link" href="/richard-kern">Back</a>
+  <a class="page-link" href="{{ '/richard-kern' | prepend: site.baseurl }}">Back</a>
 </div>
 
