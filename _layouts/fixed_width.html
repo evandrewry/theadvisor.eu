@@ -17,7 +17,17 @@
     </main>
 
     {% include footer.html %}
-
+    <script>
+    function verticallyCenter(e) {
+      var h = document.documentElement.clientHeight - 250;
+      var d = h - e.clientHeight;
+      if (d > 0) {
+        e.style.marginTop = d/2 + "px";
+      }
+    };
+    window.onresize = verticallyCenter.bind(null, document.querySelector('.wrapper-fixed-width'));
+    window.onresize();
+    </script>
   </body>
 
 </html>
