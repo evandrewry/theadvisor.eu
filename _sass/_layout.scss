@@ -1,11 +1,24 @@
+body {
+  background-color: black;
+}
+
+.social-media-list {
+  text-align: center;
+}
+
+.letter-links {
+  text-align: center;
+}
+
+.page-link, .social-media-link {
+  text-transform: uppercase;
+}
+
 /**
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
-
     // Positioning context for the mobile navigation icon
     position: relative;
 }
@@ -20,7 +33,8 @@
 
     &,
     &:visited {
-        color: $grey-color-dark;
+        color: white;
+        text-transform: uppercase;
     }
 }
 
@@ -98,7 +112,6 @@
  * Site footer
  */
 .site-footer {
-    border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
 
@@ -115,7 +128,6 @@
 
 .footer-col-wrapper {
     font-size: 15px;
-    color: $grey-color;
     margin-left: -$spacing-unit / 2;
     @extend %clearfix;
 }
@@ -176,12 +188,9 @@
 }
 
 .post-list {
+    text-align: center;
     margin-left: 0;
     list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
 }
 
 .post-meta {
@@ -190,10 +199,14 @@
 }
 
 .post-link {
-    display: block;
+    text-transform: uppercase;
     font-size: 24px;
 }
 
+.post-link-unpublished {
+  @extend .post-link;
+  color: $grey-color;
+}
 
 
 /**

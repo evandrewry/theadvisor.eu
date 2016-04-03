@@ -1,15 +1,7 @@
 ---
-layout: page
+layout: default
 title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
-
-You can find the source code for the Jekyll new theme at:
-{% include icon-github.html username="jglovier" %} /
-[jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at
-{% include icon-github.html username="jekyll" %} /
-[jekyll](https://github.com/jekyll/jekyll)
+A MAN'S FIRST REBELLION OCCURS ONCE HE SHEDS CONFINEMENT. CO-EXISTING AS THE BROTHER GALLERY TO THE PROVOCATEUR AND EDITED BY ALEX KAZEMI, THE ADVISOR HOSTS A VISUAL ARCHIVE OF ORIGINAL HANDWRITTEN LETTERS PENNED BY VENERATED MALES WITHIN THE ARTS, WRITTEN TO FELLOW MEN. THESE ARTIFACTS, PUBLISHED ONCE A WEEK, EXIST AS PILLARS OF ADVICE, MENTORSHIP, AND PERSONAL ANECDOTES, OFFERING A PEEK INTO THE INNER WORLDS OF CULTURE'S MOST PARAMOUNT MALE CREATIVES. BY OFFERING THEIR PERSONAL EXPERIENCES AND ADVISEMENT IN PURSUITS OF OCCUPATION, LIFE, AND LOVE, THE ADVISOR AIMS TO BRIDGE THE GAP BETWEEN MYTH AND REALITY, ALLOWING FOR COUNSEL AND GUIDANCE FROM EACH INDIVIDUAL CREATIVE TO THE READER.

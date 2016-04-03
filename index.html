@@ -3,21 +3,36 @@ layout: default
 ---
 
 <div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
   <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
+    <li>
+      <h2>
+        <a class="post-link" href="{{ '/richard-kern' | prepend: site.baseurl }}">04.01 Richard Kern</a>
+      </h2>
+    </li>
+    <li>
+      <h2>
+        <a class="post-link" href="{{ '/bruce-labruce' | prepend: site.baseurl }}">04.01 Bruce LaBruce</a>
+      </h2>
+    </li>
+    <li>
+      <h2>
+        <span class="post-link-unpublished">04.08 MARCEL CASTENMILLER</span>
+      </h2>
+    </li>
+    <li>
+      <h2>
+        <span class="post-link-unpublished">04.15 RAD HOURANI</span>
+      </h2>
+    </li>
+    <li>
+      <h2>
+        <span class="post-link-unpublished">04.22 JUSTIN TRANTER</span>
+      </h2>
+    </li>
+    <li>
+      <h2>
+        <span class="post-link-unpublished">04.29 NABIL</span>
+      </h2>
+    </li>
   </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
 </div>
