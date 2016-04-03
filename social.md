@@ -11,7 +11,4 @@ permalink: /social/
   <li class="social-media-link">
     <a href="https://instagram.com/theadvisor_eu" target="_blank">instagram</a>
   </li>
-  <li class="social-media-link">
-    <a href="https://www.facebook.com/theadvisor.eu" target="_blank">facebook</a>
-  </li>
 </ul>

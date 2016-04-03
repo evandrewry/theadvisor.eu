@@ -35,7 +35,7 @@ body {
 }
 
 .site-title {
-  font-size: 26px;
+  font-size: $base-font-size;
   font-weight: 300;
   line-height: 56px;
   letter-spacing: -1px;
@@ -195,14 +195,16 @@ body {
   padding: $spacing-unit 0;
 }
 
-.page-heading {
-  font-size: 20px;
-}
-
 .post-list {
   text-align: center;
   margin-left: 0;
   list-style: none;
+  li {
+    display: inline-block;
+    &:not(:last-child):after {
+      content: ' / '
+    }
+  }
 }
 
 .post-meta {
@@ -212,9 +214,9 @@ body {
 
 .post-link {
   text-transform: uppercase;
-  font-size: 40px;
+  font-size: 37px;
   @include media-query($on-palm) {
-    font-size: 24px;
+    font-size: 14px;
   }
 }
 
