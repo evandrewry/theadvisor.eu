@@ -6,7 +6,7 @@ body {
   margin-bottom: 0;
   padding: $spacing-unit 0;
 }
-.footer-link, .social-media-link {
+.footer-link {
   display: inline-block;
   &:not(:first-child) {
     margin-left: 5px;
@@ -15,6 +15,7 @@ body {
 
 .social-media-list {
   text-align: center;
+  padding: $spacing-unit 0;
 }
 
 .letter-links {
