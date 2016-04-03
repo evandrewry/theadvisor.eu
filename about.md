@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: fixed_width
 title: About
 permalink: /about/
 ---
