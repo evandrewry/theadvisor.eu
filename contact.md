@@ -4,4 +4,8 @@ title: Contact
 permalink: /contact/
 ---
 
-[E: {{ site.email }}](mailto:{{ site.email }})
+<ul class="social-media-list">
+  <li class="social-media-link">
+    <a href="mailto:{{ site.email }}">E: {{ site.email }}</a>
+  </li>
+</ul>
