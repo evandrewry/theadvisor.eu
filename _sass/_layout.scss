@@ -2,6 +2,13 @@ body {
   background-color: $background-color;
 }
 
+.home {
+  height: 345px;
+  @include media-query($on-palm) {
+    height: 126px;
+  }
+}
+
 .footer-links-list {
   line-height: 56px;
   margin-bottom: 0;
