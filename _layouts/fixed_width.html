@@ -19,8 +19,8 @@
     {% include footer.html %}
     <script>
     function verticallyCenter(e) {
-      var h = document.documentElement.clientHeight - 120;
-      var d = h - e.clientHeight;
+      var h = document.documentElement.clientHeight - 112;
+      var d = h - e.parentElement.clientHeight;
       if (d > 0) {
         e.style.marginTop = d/2 + "px";
       }
