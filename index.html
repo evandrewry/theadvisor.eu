@@ -12,3 +12,15 @@ layout: default
     <li class="post-link-unpublished"><span>04.29 NABIL</span></li>
   </ul>
 </div>
+<script>
+function onresize() {
+  var e = document.querySelector('.home');
+  var h = document.documentElement.clientHeight - 250;
+  var d = h - e.clientHeight;
+  if (d > 0) {
+    e.style.marginTop = d/2 + "px";
+  }
+};
+window.onresize = onresize;
+onresize();
+</script>
