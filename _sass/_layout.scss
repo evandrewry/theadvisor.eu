@@ -79,13 +79,6 @@ body {
   text-align: center;
   margin-left: 0;
   list-style: none;
-  li {
-    display: inline-block;
-    &:not(:last-child):after {
-      content: '/';
-      padding: 0 15px;
-    }
-  }
 }
 
 .post-meta {
