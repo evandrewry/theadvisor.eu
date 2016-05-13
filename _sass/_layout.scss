@@ -3,7 +3,13 @@ body {
 }
 
 .home {
-  height: 345px;
+  height: 110px;
+  @include media-query($on-palm) {
+    height: 21px;
+  }
+}
+.archive {
+  height: 330px;
   @include media-query($on-palm) {
     height: 126px;
   }
