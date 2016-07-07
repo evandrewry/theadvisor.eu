@@ -3,9 +3,9 @@ body {
 }
 
 .home {
-  height: 110px;
+  height: 620px;
   @include media-query($on-palm) {
-    height: 21px;
+    height: 246px;
   }
 }
 .archive {
