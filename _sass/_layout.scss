@@ -4,6 +4,12 @@ body {
 
 .home {
   height: 620px;
+  @media screen and (max-height: 780px) {
+    height: 420px;
+  }
+  @media screen and (max-height: 560px) {
+    height: 246px;
+  }
   @include media-query($on-palm) {
     height: 246px;
   }
@@ -110,6 +116,12 @@ body {
 .post-link {
   text-transform: uppercase;
   font-size: 37px;
+  @media screen and (max-height: 780px) {
+    font-size: 24px;
+  }
+  @media screen and (max-height: 560px) {
+    font-size: 14px;
+  }
   @include media-query($on-palm) {
     font-size: 14px;
   }
@@ -119,3 +131,6 @@ body {
   @extend .post-link;
   color: $grey-color;
 }
+
+
+
