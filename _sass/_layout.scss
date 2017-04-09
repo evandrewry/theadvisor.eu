@@ -4,6 +4,18 @@ body {
 
 .home {
   height: 620px;
+  @media screen and (max-height: 780px) {
+    height: 420px;
+  }
+  @media screen and (max-height: 560px) {
+    height: 246px;
+  }
+  @media screen and (max-height: 350px) {
+    height: 180px;
+  }
+  @media screen and (max-height: 290px) {
+    height: 150px;
+  }
   @include media-query($on-palm) {
     height: 246px;
   }
@@ -110,6 +122,18 @@ body {
 .post-link {
   text-transform: uppercase;
   font-size: 37px;
+  @media screen and (max-height: 780px) {
+    font-size: 24px;
+  }
+  @media screen and (max-height: 560px) {
+    font-size: 14px;
+  }
+  @media screen and (max-height: 350px) {
+    font-size: 10px;
+  }
+  @media screen and (max-height: 290px) {
+    font-size: 8px;
+  }
   @include media-query($on-palm) {
     font-size: 14px;
   }
@@ -119,3 +143,6 @@ body {
   @extend .post-link;
   color: $grey-color;
 }
+
+
+
