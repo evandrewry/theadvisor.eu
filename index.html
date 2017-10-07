@@ -16,3 +16,60 @@ layout: fixed_width
     <li class="post-link"><a href="{{ '/moby' | prepend: site.baseurl }}">Moby</a></li>
   </ul>
 </div>
+
+<script>
+/**
+ * Simple JavaScript-drive pop-up
+ * ------------------------------
+ *
+ * A simple and quick implementation to create closable pop-up
+ * boxes with JavaScript. Renders the pop-up box shamelessly,
+ * wherever you use it.
+ *
+ * I don't really know if it's cool or not. You decide.
+ *
+ * @param string Content for the pop-up box
+ * @param boolean Close-button specifier
+ */
+
+function js_popup(html, is_closable=false) {
+  var el = document.createElement("div"),
+      el_style = document.createElement("style"),
+      el_css = '.js-popup{ position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: #000; border: 1px solid #999999; max-width: 550px; border-radius: 0px; padding-top: 30px; padding-bottom: 30px;} .js-popup img, .js-popup iframe, .js-popup video{ max-width: 100%; } .js-popup-inner{ position: relative; padding: 10px; } .js-popup-close{background-color: none; color: white; border-width: 0; font-size: 13px; font-weight: normal;   height: 65px; width: 300px;   text-align: center; }',
+      el_close = (is_closable) ? '<button class="js-popup-close" id="js_popup_close" style="-webkit-appearance: none;background-color:black;font-size:10px;">The Advisor&apos;s winter edition premieres December 1st, 2017.<br><br>CONTINUE TO SITE</button>': '',
+      body = document.getElementsByTagName('body')[0],
+      head = document.getElementsByTagName('head')[0];
+
+  el.setAttribute("class", "js-popup");
+  el.innerHTML = '<div style="text-align: center"><div class="js-popup-inner" style="display: inline-block;">' + html + el_close + '</div></div>';
+  body.appendChild(el);
+
+  el_close = document.querySelector("#js_popup_close");
+
+  if(el_style.styleSheet){
+      el_style.styleSheet.cssText = el_css;
+  } else {
+      el_style.appendChild(document.createTextNode(el_css));
+  }
+  head.appendChild(el_style);
+
+  if(el_close) {
+    el_close.addEventListener('click', function() {
+      el.remove();
+      el_style.remove();
+    });
+  }
+
+}
+
+// Showing it up when loading starts
+window.onload = function() {
+  /* Remember to escape the characters to their respective valid
+     HTML entities, for eg. ' will become \' */
+
+
+
+
+  js_popup('<p class="popup-paragraph"></p>', true);
+}
+</script>
